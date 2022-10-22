@@ -4,9 +4,44 @@
 
 .container {
   border: 4px solid lightgray;
+  padding: 48px 48px 24px 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 48px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
+  /* height: 48px; */
+  border: 4px solid lightgray;
+  margin-bottom: 24px;
+}
+
+.box-small {
+  height: 50px;
+}
+
+.small-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sm-box {
+  width: 30%;
+}
+
+.box-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-big {
+  width: 50%;
 }
