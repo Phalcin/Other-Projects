@@ -40,8 +40,36 @@
 
 // console.log(oppositeBoolean(true));
 
-function notZero(a) {
-  return a !== 0;
+// function notZero(a) {
+//   return a !== 0;
+// }
+
+// console.log(notZero(5));
+
+// function calcRemainder(a, b) {
+//   return a % b;
+// }
+
+// console.log(calcRemainder(4, 2));
+
+// function isLoggedInAndSubscribed(a, b) {
+//   return a === "LOGGED_IN" && b === "SUBSCRIBED" ? true : false;
+// }
+
+// console.log(isLoggedInAndSubscribed("LOGGED_OUT", "SUBSCRIBED"));
+
+// function filterOutFalsy(a, b) {
+//   return !a ? a : b;
+// }
+
+// console.log(filterOutFalsy(true, "Dog"));
+
+function arrSum(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
 
-console.log(notZero(5));
+console.log(arrSum([2, 2, 2]));
