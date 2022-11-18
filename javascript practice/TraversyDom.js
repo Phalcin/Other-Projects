@@ -81,3 +81,19 @@
 //   .querySelector("ul")
 //   .getElementsByClassName("collection-item");
 // console.log(listItems);
+
+let lis = document.getElementsByTagName("li");
+console.log(lis);
+console.log(lis[0]);
+lis[0].style.color = "red";
+lis[3].textContent = "Hello";
+
+lis = Array.from(lis);
+lis.reverse();
+
+lis.forEach((li, index) => {
+  console.log(li.className);
+  li.textContent = `${index} : Hello`;
+});
+
+console.log(lis);
