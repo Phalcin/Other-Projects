@@ -1,3 +1,15 @@
-const numbers = [-10, 0, -2, 15, -36, 25];
-const positiveNumber = numbers.filter((number) => number >= 0);
-console.log(positiveNumber);
+const employeesData = [
+  { name: "Sebastian", overtime: 5 },
+  { name: "Cardi Vee", overtime: 10 },
+  { name: "George Lopez", overtime: 12 },
+];
+
+const employeesToReward = employeesData.filter(
+  (employees) => employees.overtime >= 7
+);
+console.log(employeesToReward);
+
+const employeesNames = employeesToReward.map((names) => names.name);
+console.log(employeesNames);
+
+employeesNames.forEach((name) => console.log(`${name} received a reward`));
