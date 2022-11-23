@@ -1,15 +1,15 @@
-const employeesData = [
-  { name: "Sebastian", overtime: 5 },
-  { name: "Cardi Vee", overtime: 10 },
-  { name: "George Lopez", overtime: 12 },
-];
+const person = {
+  firstName: "Brad",
+  "this is a key with spaces": true,
+};
 
-const employeesToReward = employeesData.filter(
-  (employees) => employees.overtime >= 7
-);
-console.log(employeesToReward);
+person.dog = { name: "Fluffy", age: 2 };
+person.age = 25;
 
-const employeesNames = employeesToReward.map((names) => names.name);
-console.log(employeesNames);
+console.log(person.firstName);
+console.log(person);
 
-employeesNames.forEach((name) => console.log(`${name} received a reward`));
+// SQUARE BRACKET NOTATION
+const property = "age";
+
+console.log(person["this is a key with spaces"]);
