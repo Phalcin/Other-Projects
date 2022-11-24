@@ -1,19 +1,17 @@
-// const animals = ["dogs", "cats"];
-// const otherAnimals = animals; // ['dogs', 'cats]
-
-// animals.push("llamas");
-
-// console.log(animals);
-// console.log(otherAnimals);
-
-const person = {
-  firstName: "Jon",
-  lastName: "Snow",
+const ghana = {
+  firstName: "Akuffo",
+  secondName: "Addo",
+  cars: {
+    firstCar: "BMW",
+    otherCars: "Many BMWS",
+  },
+  funcGhana(well) {
+    console.log(well);
+  },
 };
 
-const otherPerson = person;
+const newGhana = JSON.parse(JSON.stringify(ghana));
 
-person.firstName = "Johnny";
-
-console.log(person);
-console.log(otherPerson);
+newGhana.cars.firstName = "Ministers";
+newGhana.firstName = "shit";
+console.log(newGhana);
