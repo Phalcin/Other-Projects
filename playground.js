@@ -1,7 +1,19 @@
-let x = 1;
-let y = x;
+// const animals = ["dogs", "cats"];
+// const otherAnimals = animals; // ['dogs', 'cats]
 
-x = 2;
+// animals.push("llamas");
 
-console.log(x);
-console.log(y);
+// console.log(animals);
+// console.log(otherAnimals);
+
+const person = {
+  firstName: "Jon",
+  lastName: "Snow",
+};
+
+const otherPerson = person;
+
+person.firstName = "Johnny";
+
+console.log(person);
+console.log(otherPerson);
