@@ -1,17 +1,13 @@
-const ghana = {
-  firstName: "Akuffo",
-  secondName: "Addo",
-  cars: {
-    firstCar: "BMW",
-    otherCars: "Many BMWS",
-  },
-  funcGhana(well) {
-    console.log(well);
+const cars = {
+  car1: "Bugatti",
+  car2: "Ferrari",
+  otherStuff: {
+    house: 1,
+    well: 1,
   },
 };
 
-const newGhana = JSON.parse(JSON.stringify(ghana));
+console.log(cars);
+const carShow = cars;
 
-newGhana.cars.firstName = "Ministers";
-newGhana.firstName = "shit";
-console.log(newGhana);
+JSON.parse(JSON.stringify(carShow));
